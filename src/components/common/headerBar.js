@@ -1,6 +1,6 @@
 import React from 'react'
 import { Badge, Dropdown, Menu, Row, Col, Avatar, Typography } from 'antd'
-import { BellOutlined, MenuFoldOutlined, MenuUnfoldOutlined, UserOutlined, LogoutOutlined, TeamOutlined} from '@ant-design/icons'
+import { BellOutlined, MenuFoldOutlined, MenuUnfoldOutlined, UserOutlined, LogoutOutlined } from '@ant-design/icons'
 import methods from '@common/methods'
 import constants from '@common/constants';
 import events from '@common/events'

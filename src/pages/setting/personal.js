@@ -5,7 +5,7 @@
 import React from 'react'
 import CustomBreadcrumb from '@components/common/customBreadcrumb'
 import connectComponent from '@common/connectComponent'
-import { Card, Descriptions, Skeleton, Button, Form, Upload, message, Input, Spin } from 'antd'
+import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from 'antd'
 import {LoadingOutlined, PlusOutlined} from '@ant-design/icons'
 import constants from '@common/constants';
 import methods from '@common/methods'

@@ -29,9 +29,11 @@ config-overrides.js 静态资源配置
 .env.development(默认)  
 .env.production(生产模式)  
 .env.test(自定义模式)   
-文件的属性调用，如const api = process.env.REACT_APP_API  
+获取文件的属性方式，如const api = process.env.REACT_APP_API  
 
-2. 路由routes.js
+2. 出现TypeError: Failed to fetch，需要修改上述文件REACT_APP_API的值  
+
+3. 路由routes.js
 ```
 ...
 import App from '@pages/app'
