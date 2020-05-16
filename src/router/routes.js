@@ -1,39 +1,12 @@
-# react-antd-guide
-最简单的react+antd项目
-
-## 技术栈
-
-react + redux + react-router + antd
-
-## 运行项目
-```npm install```
-
-```npm run start```  
-启动项目，默认开发环境
-
-```npm run bulid```  
-构建生产项目，将生产应用程序生成到“build”文件夹下，可在ngix中绑定域名，根目录为指向build文件夹下的index.html
-
-### 目录结构
-
-```assets 资源文件  
-common 一些公用方法  
-components 用户自定义组件  
-pages js页面
-redux 页面调用的action与service方法，异步调用
-router 页面的路由
-config-overrides.js 静态资源配置
-```
-### 说明
-1. 开发模式  
-.env.development(默认)  
-.env.production(生产模式)  
-.env.test(自定义模式)   
-文件的属性调用，如const api = process.env.REACT_APP_API  
-
-2. 路由routes.js
-```
-...
+/*
+ * @Description: 
+ * @Autor: wangzc
+ * @Date: 2020-05-07 10:17:46
+ * @LastEditors: wangzc
+ * @LastEditTime: 2020-05-13 14:39:46
+ */
+import React from 'react'
+import { Router, Route, IndexRoute, Redirect, browserHistory } from 'react-router'
 import App from '@pages/app'
 import Login from '@pages/login'
 import Register from '@pages/register'
@@ -46,7 +19,21 @@ import Updatephone from '@pages/setting/updatephone'
 import Findpwd from '@pages/findpwd'
 import NotifyList from '@pages/notify/list'
 
-...
+let hasRedirected = false
+
+const onEnter = (nextState, replace) => {
+    const account= methods.getLocalStorage(constants.localKey.accountInfo)
+    if (!account && !hasRedirected) {
+        hasRedirected = true
+        replace({ pathname: '/login' })
+    }
+}
+const onLogin = (nextState, replace) => {
+    const account= methods.getLocalStorage(constants.localKey.accountInfo)
+    if (account) {
+        replace({ pathname: '/index' })
+    }
+}
 
 const routes = (
     <Router history={browserHistory}>
@@ -65,7 +52,4 @@ const routes = (
     </Router>
 );
 
-```
-
-###### 引用
->记录，成为更好的自己，为此而奋斗
+export default routes;
