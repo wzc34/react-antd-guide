@@ -39,7 +39,7 @@ class Personal extends React.Component {
     formRef = React.createRef()
 
     componentDidMount() {
-        this.getUserInfo()
+        // this.getUserInfo()
     }
     
     getUserInfo() {
@@ -163,7 +163,7 @@ class Personal extends React.Component {
             }
             return num || '暂无'
         }
-        if (account) {
+        // if (account) {
             if (!isAuth) {
                 return (
                     <div>
@@ -184,9 +184,9 @@ class Personal extends React.Component {
                     </div>
                 )
             }
-        } else {
-            return <Skeleton></Skeleton>
-        }
+        // } else {
+            // return <Skeleton></Skeleton>
+        // }
     }
 
     render() {
