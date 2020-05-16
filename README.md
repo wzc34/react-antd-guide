@@ -1,7 +1,7 @@
 # react-antd-guide
 最简单的react+antd项目
 
-## 技术栈cd
+## 技术栈
 
 react + redux + react-router + antd
 
