@@ -20,7 +20,7 @@ react + redux + react-router + antd
 common 一些公用方法  
 components 用户自定义组件  
 pages js页面
-redux 页面调用的action与service方法，异步调用
+redux 页面调用的action与service方法
 router 页面的路由
 config-overrides.js 静态资源配置
 ```
