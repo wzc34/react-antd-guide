@@ -5,11 +5,7 @@
 import React from 'react'
 import CustomBreadcrumb from '@components/common/customBreadcrumb'
 import connectComponent from '@common/connectComponent'
-<<<<<<< HEAD
-import { Card, Descriptions, Skeleton, Button, Form, Upload, message, Input, Spin } from 'antd'
-=======
 import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from 'antd'
->>>>>>> 9f97350... first commit
 import {LoadingOutlined, PlusOutlined} from '@ant-design/icons'
 import constants from '@common/constants';
 import methods from '@common/methods'
@@ -43,11 +39,7 @@ class Personal extends React.Component {
     formRef = React.createRef()
 
     componentDidMount() {
-<<<<<<< HEAD
-        this.getUserInfo()
-=======
         // this.getUserInfo()
->>>>>>> 9f97350... first commit
     }
     
     getUserInfo() {
@@ -171,11 +163,7 @@ class Personal extends React.Component {
             }
             return num || '暂无'
         }
-<<<<<<< HEAD
-        if (account) {
-=======
         // if (account) {
->>>>>>> 9f97350... first commit
             if (!isAuth) {
                 return (
                     <div>
@@ -196,15 +184,9 @@ class Personal extends React.Component {
                     </div>
                 )
             }
-<<<<<<< HEAD
-        } else {
-            return <Skeleton></Skeleton>
-        }
-=======
         // } else {
             // return <Skeleton></Skeleton>
         // }
->>>>>>> 9f97350... first commit
     }
 
     render() {
