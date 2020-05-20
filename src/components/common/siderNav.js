@@ -10,67 +10,48 @@ import CustomMenu from "./customMenu";
 import {HomeOutlined, SettingOutlined} from '@ant-design/icons'
 
 const menus = [
-  {
-    title: '首页',
-    icon: <HomeOutlined />,
-    key: '/index'
-  },
-  {
-    title: '设置',
-    icon: <SettingOutlined />,
-    key: '/setting',
-    subs: [
-      { key: '/setting/personal', title: '个人信息' },
-      { key: '/setting/updatepwd', title: '修改密码' },
-      { key: '/setting/updatephone', title: '更改手机号' },
-    ]
-  },
+    {
+        title: '首页',
+        icon: <HomeOutlined />,
+        key: '/index'
+    },
+    {
+        title: '设置',
+        icon: <SettingOutlined />,
+        key: '/setting',
+        subs: [
+            { key: '/setting/personal', title: '个人信息' },
+            { key: '/setting/updatepwd', title: '修改密码' },
+            { key: '/setting/updatephone', title: '更改手机号' },
+        ]
+    },
 ]
 
 class SiderNav extends React.Component {
-  render() {
-    return (
-      <div style={{minHeight: '100vh',overflowY:'auto'}}>
-        <div style={styles.logo}>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        {/* <img alt='' style={{width: '50px',padding: '5px'}} src={require('@img/logo.png')}/> */}
-          {/* <span style={{position: 'absolute', paddingTop: 14, paddingLeft:10}}> */}
-          XXX平台
-          {/* </span> */}
-=======
-=======
->>>>>>> 06cf57b... first commit
-=======
->>>>>>> 9f97350... first commit
-         <img alt='' style={{width: '50px',padding: '5px'}} src={require('@img/logo1.png')}/>
-           <span style={{position: 'absolute', paddingTop: 14, paddingLeft:10}}>
+    render() {
+        return (
+            <div style={{minHeight: '100vh',overflowY:'auto'}}>
+                <div style={styles.logo}>
+                    <img alt='' style={{width: '50px',padding: '5px'}} src={require('@img/logo1.png')}/>
+                    <span style={{position: 'absolute', paddingTop: 14, paddingLeft:10}}>
           XXX平台
            </span>
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 45d7c04... first commit
-=======
->>>>>>> 06cf57b... first commit
-=======
->>>>>>> 9f97350... first commit
-        </div>
-        <CustomMenu menus={menus} onToggleWap={this.props.onToggleWap} />
-      </div>
-    )
-  }
+                </div>
+                <CustomMenu menus={menus} onToggleWap={this.props.onToggleWap} />
+            </div>
+        )
+    }
 }
 
 const styles = {
-  logo: {
-    fontWeight: 'bolder',
-    fontSize: 18,
-    color: '#fff',
-    margin: 16,
-    position: 'relative',
-    overflow: 'hidden',
-  }
+    logo: {
+        fontWeight: 'bolder',
+        fontSize: 18,
+        color: '#fff',
+        margin: 16,
+        position: 'relative',
+        overflow: 'hidden',
+    }
 }
 
 export default SiderNav

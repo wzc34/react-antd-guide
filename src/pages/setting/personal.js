@@ -5,19 +5,7 @@
 import React from 'react'
 import CustomBreadcrumb from '@components/common/customBreadcrumb'
 import connectComponent from '@common/connectComponent'
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { Card, Descriptions, Skeleton, Button, Form, Upload, message, Input, Spin } from 'antd'
-=======
 import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from 'antd'
->>>>>>> 45d7c04... first commit
-=======
-import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from 'antd'
->>>>>>> 06cf57b... first commit
-=======
-import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from 'antd'
->>>>>>> 9f97350... first commit
 import {LoadingOutlined, PlusOutlined} from '@ant-design/icons'
 import constants from '@common/constants';
 import methods from '@common/methods'
@@ -51,21 +39,9 @@ class Personal extends React.Component {
     formRef = React.createRef()
 
     componentDidMount() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        this.getUserInfo()
-=======
         // this.getUserInfo()
->>>>>>> 45d7c04... first commit
-=======
-        // this.getUserInfo()
->>>>>>> 06cf57b... first commit
-=======
-        // this.getUserInfo()
->>>>>>> 9f97350... first commit
     }
-    
+
     getUserInfo() {
         const account = JSON.parse(methods.getLocalStorage(constants.localKey.accountInfo))
         const { actions } = this.props
@@ -86,7 +62,7 @@ class Personal extends React.Component {
             form.setFieldsValue({cnname:account.cnname})
         })
     }
-    
+
     handleSubmit = values => {
         this.updateUserInfo(values)
     }
@@ -140,7 +116,7 @@ class Personal extends React.Component {
                     this.getBase64(info.file.originFileObj, imageUrl =>
                         this.setState({
                             card1temp: imageUrl,
-                            card1: res.data.url, 
+                            card1: res.data.url,
                             loading1: false,
                         })
                     )
@@ -162,7 +138,7 @@ class Personal extends React.Component {
                     this.getBase64(info.file.originFileObj, imageUrl =>
                         this.setState({
                             card2temp: imageUrl,
-                            card2: res.data.url, 
+                            card2: res.data.url,
                             loading2: false,
                         })
                     )
@@ -187,60 +163,30 @@ class Personal extends React.Component {
             }
             return num || '暂无'
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (account) {
-=======
         // if (account) {
->>>>>>> 45d7c04... first commit
-=======
-        // if (account) {
->>>>>>> 06cf57b... first commit
-=======
-        // if (account) {
->>>>>>> 9f97350... first commit
-            if (!isAuth) {
-                return (
-                    <div>
-                        <Descriptions column={2}>
-                            <Descriptions.Item label="姓名">{account.cnname}</Descriptions.Item>
-                            <Descriptions.Item label="手机号">{account.phone}</Descriptions.Item>
-                            <Descriptions.Item label="身份证号">{cardNo()}</Descriptions.Item>
-                            <Descriptions.Item label="邮箱">{account.email || '暂无'}</Descriptions.Item>
-                            <Descriptions.Item label="身份证">
-                                <Img className='cursor' loader={<Spin size='small' />} src={account.card1} style={{ width: 40 }} onClick={() => {
+        if (!isAuth) {
+            return (
+                <div>
+                    <Descriptions column={2}>
+                        <Descriptions.Item label="姓名">{account.cnname}</Descriptions.Item>
+                        <Descriptions.Item label="手机号">{account.phone}</Descriptions.Item>
+                        <Descriptions.Item label="身份证号">{cardNo()}</Descriptions.Item>
+                        <Descriptions.Item label="邮箱">{account.email || '暂无'}</Descriptions.Item>
+                        <Descriptions.Item label="身份证">
+                            <Img className='cursor' loader={<Spin size='small' />} src={account.card1} style={{ width: 40 }} onClick={() => {
                                 this.setState({ tmPicVisible: true, tmPic: account.card1 })
                             }} />
-                                <Img className='cursor' loader={<Spin size='small' />} src={account.card2} style={{ width: 40, marginLeft: 10 }} onClick={() => {
+                            <Img className='cursor' loader={<Spin size='small' />} src={account.card2} style={{ width: 40, marginLeft: 10 }} onClick={() => {
                                 this.setState({ tmPicVisible: true, tmPic: account.card2 })
                             }} />
-                            </Descriptions.Item>
-                        </Descriptions>
-                    </div>
-                )
-            }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        } else {
-            return <Skeleton></Skeleton>
+                        </Descriptions.Item>
+                    </Descriptions>
+                </div>
+            )
         }
-=======
         // } else {
-            // return <Skeleton></Skeleton>
+        // return <Skeleton></Skeleton>
         // }
->>>>>>> 45d7c04... first commit
-=======
-        // } else {
-            // return <Skeleton></Skeleton>
-        // }
->>>>>>> 06cf57b... first commit
-=======
-        // } else {
-            // return <Skeleton></Skeleton>
-        // }
->>>>>>> 9f97350... first commit
     }
 
     render() {
@@ -248,15 +194,15 @@ class Personal extends React.Component {
         const uploadButton1 = (
             <div>
                 {loading1 ? <LoadingOutlined /> : <PlusOutlined />}
-              <div className="ant-upload-text">上传正面</div>
+                <div className="ant-upload-text">上传正面</div>
             </div>
-          )
+        )
         const uploadButton2 = (
             <div>
                 {loading2 ? <LoadingOutlined /> : <PlusOutlined />}
-              <div className="ant-upload-text">上传反面</div>
+                <div className="ant-upload-text">上传反面</div>
             </div>
-          )
+        )
         return (
             <div className="container">
                 <CustomBreadcrumb arr={['设置','个人信息']}/>
@@ -268,19 +214,19 @@ class Personal extends React.Component {
                                 <span>{account.phone}</span>
                             </Form.Item>
                             <Form.Item label="姓名" name="cnname"
-                                rules={[{ required: true, message: '请输入姓名' },
-                                    {
-                                        max: 20,
-                                        message: '姓名字数过长'
-                                    }]} hasFeedback>
+                                       rules={[{ required: true, message: '请输入姓名' },
+                                           {
+                                               max: 20,
+                                               message: '姓名字数过长'
+                                           }]} hasFeedback>
                                 <Input placeholder="姓名" />
                             </Form.Item>
                             <Form.Item label="身份证号" name="cardNo"
-                                rules={[{ required: true, message: '请输入身份证号' },
-                                    {
-                                        len: 18,
-                                        message: '身份证号不正确'
-                                    }]} hasFeedback>
+                                       rules={[{ required: true, message: '请输入身份证号' },
+                                           {
+                                               len: 18,
+                                               message: '身份证号不正确'
+                                           }]} hasFeedback>
                                 <Input placeholder="身份证号" />
                             </Form.Item>
                             <Form.Item
@@ -288,18 +234,18 @@ class Personal extends React.Component {
                                 name="card1"
                                 extra="上传图片格式：jpg，jpeg，png"
                                 rules={[{ required: true, message: "请上传身份证正面" }]}
-                                >
+                            >
 
-                                            <Upload
-                                                name="file"
-                                                listType="picture-card"
-                                                showUploadList={false}
-                                                action={`${cardUploadApi}?userId=${account.id}`}
-                                                beforeUpload={(file)=>this.onBeforeUpload(file)}
-                                                onChange={this.onChangePicture1}
-                                            >
-                                                {card1temp ? <img src={card1temp} alt="avatar" style={{ width: '100%' }} /> : uploadButton1}
-                                            </Upload>
+                                <Upload
+                                    name="file"
+                                    listType="picture-card"
+                                    showUploadList={false}
+                                    action={`${cardUploadApi}?userId=${account.id}`}
+                                    beforeUpload={(file)=>this.onBeforeUpload(file)}
+                                    onChange={this.onChangePicture1}
+                                >
+                                    {card1temp ? <img src={card1temp} alt="avatar" style={{ width: '100%' }} /> : uploadButton1}
+                                </Upload>
 
                             </Form.Item>
                             <Form.Item
@@ -307,27 +253,27 @@ class Personal extends React.Component {
                                 name="card2"
                                 extra="上传图片格式：jpg，jpeg，png"
                                 rules={[{ required: true, message: "请上传身份证反面" }]}
-                                >
+                            >
 
-                                        <Upload
-                                            name="file"
-                                            listType="picture-card"
-                                            showUploadList={false}
-                                            action={`${cardUploadApi}?userId=${account.id}`}
-                                            beforeUpload={(file)=>this.onBeforeUpload(file)}
-                                            onChange={this.onChangePicture2}
-                                        >
-                                            {card2temp ? <img src={card2temp} alt="avatar" style={{ width: '100%' }} /> : uploadButton2}
-                                        </Upload>
+                                <Upload
+                                    name="file"
+                                    listType="picture-card"
+                                    showUploadList={false}
+                                    action={`${cardUploadApi}?userId=${account.id}`}
+                                    beforeUpload={(file)=>this.onBeforeUpload(file)}
+                                    onChange={this.onChangePicture2}
+                                >
+                                    {card2temp ? <img src={card2temp} alt="avatar" style={{ width: '100%' }} /> : uploadButton2}
+                                </Upload>
 
                             </Form.Item>
                             <Form.Item label="邮箱" name="email"
-                                    rules={[{ message: '请输入邮箱地址' },
-                                    {
-                                        type: 'email',
-                                        message: '请输入正确邮箱地址',
-                                    },
-                                    ]}>
+                                       rules={[{ message: '请输入邮箱地址' },
+                                           {
+                                               type: 'email',
+                                               message: '请输入正确邮箱地址',
+                                           },
+                                       ]}>
                                 <Input placeholder="邮箱" />
                             </Form.Item>
                             <Form.Item wrapperCol={{ wx:{span: 24}, sm:{span: 8, offset: 8}}}>
@@ -339,16 +285,16 @@ class Personal extends React.Component {
                                 </Button>
                             </Form.Item>
                         </Form>
-                     )}
+                    )}
                 </Card>
                 {tmPicVisible &&
-                    (<Lightbox
-                        mainSrc={tmPic}
-                        clickOutsideToClose={true}
-                        onCloseRequest={() => this.setState({ tmPicVisible: false })}
-                        imageLoadErrorMessage={'图片加载失败'}
-                        on
-                    />)}
+                (<Lightbox
+                    mainSrc={tmPic}
+                    clickOutsideToClose={true}
+                    onCloseRequest={() => this.setState({ tmPicVisible: false })}
+                    imageLoadErrorMessage={'图片加载失败'}
+                    on
+                />)}
             </div>
         )
     }
