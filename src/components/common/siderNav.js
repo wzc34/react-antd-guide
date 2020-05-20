@@ -33,16 +33,22 @@ class SiderNav extends React.Component {
       <div style={{minHeight: '100vh',overflowY:'auto'}}>
         <div style={styles.logo}>
 <<<<<<< HEAD
+<<<<<<< HEAD
         {/* <img alt='' style={{width: '50px',padding: '5px'}} src={require('@img/logo.png')}/> */}
           {/* <span style={{position: 'absolute', paddingTop: 14, paddingLeft:10}}> */}
           XXX平台
           {/* </span> */}
 =======
+=======
+>>>>>>> 06cf57b... first commit
          <img alt='' style={{width: '50px',padding: '5px'}} src={require('@img/logo1.png')}/>
            <span style={{position: 'absolute', paddingTop: 14, paddingLeft:10}}>
           XXX平台
            </span>
+<<<<<<< HEAD
 >>>>>>> 45d7c04... first commit
+=======
+>>>>>>> 06cf57b... first commit
         </div>
         <CustomMenu menus={menus} onToggleWap={this.props.onToggleWap} />
       </div>
