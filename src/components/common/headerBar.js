@@ -1,14 +1,6 @@
 import React from 'react'
 import { Badge, Dropdown, Menu, Row, Col, Avatar, Typography } from 'antd'
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { BellOutlined, MenuFoldOutlined, MenuUnfoldOutlined, UserOutlined, LogoutOutlined, TeamOutlined} from '@ant-design/icons'
-=======
 import { BellOutlined, MenuFoldOutlined, MenuUnfoldOutlined, UserOutlined, LogoutOutlined } from '@ant-design/icons'
->>>>>>> 45d7c04... first commit
-=======
-import { BellOutlined, MenuFoldOutlined, MenuUnfoldOutlined, UserOutlined, LogoutOutlined } from '@ant-design/icons'
->>>>>>> 06cf57b... first commit
 import methods from '@common/methods'
 import constants from '@common/constants';
 import events from '@common/events'
@@ -79,13 +71,6 @@ class HeaderBar extends React.Component {
       <Menu className='menu'>
         <Menu.ItemGroup title='用户中心' className='menu-group'>
           <Menu.Item><span onClick={()=>this.props.router.push('/setting/personal')}><UserOutlined />个人信息</span></Menu.Item>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <Menu.Item><span onClick={()=>this.props.router.push('/data/enterprise')}><TeamOutlined />企业信息</span></Menu.Item>
-=======
->>>>>>> 45d7c04... first commit
-=======
->>>>>>> 06cf57b... first commit
           <Menu.Item><span onClick={()=>this.doLogout()}><LogoutOutlined />退出登录</span></Menu.Item>
         </Menu.ItemGroup>
       </Menu>

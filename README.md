@@ -3,7 +3,7 @@
 
 ## 技术栈
 
-react + redux + react-router + antd
+react + redux + react-router + antd4.x
 
 ## 运行项目
 ```npm install```
@@ -20,15 +20,7 @@ react + redux + react-router + antd
 common 一些公用方法  
 components 用户自定义组件  
 pages js页面
-<<<<<<< HEAD
-<<<<<<< HEAD
-redux 页面调用的action与service方法，异步调用
-=======
 redux 页面调用的action与service方法
->>>>>>> 45d7c04... first commit
-=======
-redux 页面调用的action与service方法
->>>>>>> 06cf57b... first commit
 router 页面的路由
 config-overrides.js 静态资源配置
 ```
@@ -37,23 +29,12 @@ config-overrides.js 静态资源配置
 .env.development(默认)  
 .env.production(生产模式)  
 .env.test(自定义模式)   
-<<<<<<< HEAD
-<<<<<<< HEAD
-文件的属性调用，如const api = process.env.REACT_APP_API  
-
-2. 路由routes.js
-=======
-=======
->>>>>>> 06cf57b... first commit
 获取文件的属性方式，如const api = process.env.REACT_APP_API  
 
 2. 出现TypeError: Failed to fetch，需要修改上述文件REACT_APP_API的值  
 
 3. 路由routes.js
-<<<<<<< HEAD
->>>>>>> 45d7c04... first commit
-=======
->>>>>>> 06cf57b... first commit
+
 ```
 ...
 import App from '@pages/app'

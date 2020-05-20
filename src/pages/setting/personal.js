@@ -5,15 +5,7 @@
 import React from 'react'
 import CustomBreadcrumb from '@components/common/customBreadcrumb'
 import connectComponent from '@common/connectComponent'
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { Card, Descriptions, Skeleton, Button, Form, Upload, message, Input, Spin } from 'antd'
-=======
 import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from 'antd'
->>>>>>> 45d7c04... first commit
-=======
-import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from 'antd'
->>>>>>> 06cf57b... first commit
 import {LoadingOutlined, PlusOutlined} from '@ant-design/icons'
 import constants from '@common/constants';
 import methods from '@common/methods'
@@ -47,15 +39,7 @@ class Personal extends React.Component {
     formRef = React.createRef()
 
     componentDidMount() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        this.getUserInfo()
-=======
         // this.getUserInfo()
->>>>>>> 45d7c04... first commit
-=======
-        // this.getUserInfo()
->>>>>>> 06cf57b... first commit
     }
     
     getUserInfo() {
@@ -179,15 +163,7 @@ class Personal extends React.Component {
             }
             return num || '暂无'
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (account) {
-=======
         // if (account) {
->>>>>>> 45d7c04... first commit
-=======
-        // if (account) {
->>>>>>> 06cf57b... first commit
             if (!isAuth) {
                 return (
                     <div>
@@ -208,21 +184,9 @@ class Personal extends React.Component {
                     </div>
                 )
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-        } else {
-            return <Skeleton></Skeleton>
-        }
-=======
         // } else {
             // return <Skeleton></Skeleton>
         // }
->>>>>>> 45d7c04... first commit
-=======
-        // } else {
-            // return <Skeleton></Skeleton>
-        // }
->>>>>>> 06cf57b... first commit
     }
 
     render() {
