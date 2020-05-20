@@ -1,0 +1,34 @@
+/*
+ * @Description: 
+ * @Autor: wangzc
+ * @Date: 2020-05-07 10:17:44
+ * @LastEditors: wangzc
+ * @LastEditTime: 2020-05-12 09:30:27
+ */
+
+export const COMMON = {
+    LOADING:'LOADING',
+    CAPTCHA:'CAPTCHA',
+    CHECK_CAPTCHA:'CHECK_CAPTCHA',
+    DO_DOWNLOAD_WEB_FILE:'DO_DOWNLOAD_WEB_FILE',
+}
+
+export const LOGIN = {
+    DO_LOGIN:'DO_LOGIN',
+    DO_LOG_OUT:'DO_LOG_OUT',
+    DO_REGISTER:'DO_REGISTER',
+    DO_CHECK_CNNAME:'DO_CHECK_CNNAME',
+}
+
+// 用户
+export const USER = {
+    GET_USER_INFO:'GET_USER_INFO',
+    UPDATE_USER_INFO:'UPDATE_USER_INFO',
+    CHECK_USER:'CHECK_USER',
+}
+
+export const NOTIFY = {
+    GET_NOTIFY_LIST:'GET_NOTIFY_LIST',
+    GET_NOTIFY_INFO:'GET_NOTIFY_INFO',
+    UPDATE_NOTIFY_READ_ALL:'UPDATE_NOTIFY_READ_ALL'
+}
