@@ -30,8 +30,13 @@ class Login extends React.Component {
         this.setState({ loading: true})
         // let { actions,router } = this.props
         if (account === '13100000000' && password === '123456') {
+<<<<<<< HEAD
             methods.setLocalStorage(constants.localKey.accountInfo, JSON.stringify({ phone: 13100000000, password: '123456'}))
             this.props.router.router.push('/index')
+=======
+            methods.setLocalStorage(constants.localKey.accountInfo, JSON.stringify({ cnname: '王小二', phone: 13100000000, password: '123456'}))
+            this.props.router.push('/index')
+>>>>>>> 45d7c04... first commit
         }
         // actions.doLogin({account, password:md5Util.md5(password),
         //     resolved: (res) => {
