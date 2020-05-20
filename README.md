@@ -22,6 +22,7 @@ components 用户自定义组件
 pages js页面
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 redux 页面调用的action与service方法，异步调用
 =======
 redux 页面调用的action与service方法
@@ -29,6 +30,9 @@ redux 页面调用的action与service方法
 =======
 redux 页面调用的action与service方法
 >>>>>>> 06cf57b... first commit
+=======
+redux 页面调用的action与service方法
+>>>>>>> 9f97350... first commit
 router 页面的路由
 config-overrides.js 静态资源配置
 ```
@@ -39,21 +43,27 @@ config-overrides.js 静态资源配置
 .env.test(自定义模式)   
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 文件的属性调用，如const api = process.env.REACT_APP_API  
 
 2. 路由routes.js
 =======
 =======
 >>>>>>> 06cf57b... first commit
+=======
+>>>>>>> 9f97350... first commit
 获取文件的属性方式，如const api = process.env.REACT_APP_API  
 
 2. 出现TypeError: Failed to fetch，需要修改上述文件REACT_APP_API的值  
 
 3. 路由routes.js
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 45d7c04... first commit
 =======
 >>>>>>> 06cf57b... first commit
+=======
+>>>>>>> 9f97350... first commit
 ```
 ...
 import App from '@pages/app'

@@ -32,6 +32,7 @@ class Login extends React.Component {
         if (account === '13100000000' && password === '123456') {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             methods.setLocalStorage(constants.localKey.accountInfo, JSON.stringify({ phone: 13100000000, password: '123456'}))
             this.props.router.router.push('/index')
 =======
@@ -42,6 +43,10 @@ class Login extends React.Component {
             methods.setLocalStorage(constants.localKey.accountInfo, JSON.stringify({ cnname: '王小二', phone: 13100000000, password: '123456'}))
             this.props.router.push('/index')
 >>>>>>> 06cf57b... first commit
+=======
+            methods.setLocalStorage(constants.localKey.accountInfo, JSON.stringify({ cnname: '王小二', phone: 13100000000, password: '123456'}))
+            this.props.router.push('/index')
+>>>>>>> 9f97350... first commit
         }
         // actions.doLogin({account, password:md5Util.md5(password),
         //     resolved: (res) => {

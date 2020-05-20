@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /node_modules
 
 package-lock.json
@@ -12,6 +13,11 @@ package-lock.json
 
 package-lock.json
 >>>>>>> 5a6bb68... update
+=======
+/node_modules
+
+package-lock.json
+>>>>>>> 9f97350... first commit
 =======
 /node_modules
 

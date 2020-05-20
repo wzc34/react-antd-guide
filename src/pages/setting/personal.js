@@ -7,6 +7,7 @@ import CustomBreadcrumb from '@components/common/customBreadcrumb'
 import connectComponent from '@common/connectComponent'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Card, Descriptions, Skeleton, Button, Form, Upload, message, Input, Spin } from 'antd'
 =======
 import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from 'antd'
@@ -14,6 +15,9 @@ import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from '
 =======
 import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from 'antd'
 >>>>>>> 06cf57b... first commit
+=======
+import { Card, Descriptions, Button, Form, Upload, message, Input, Spin } from 'antd'
+>>>>>>> 9f97350... first commit
 import {LoadingOutlined, PlusOutlined} from '@ant-design/icons'
 import constants from '@common/constants';
 import methods from '@common/methods'
@@ -49,6 +53,7 @@ class Personal extends React.Component {
     componentDidMount() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.getUserInfo()
 =======
         // this.getUserInfo()
@@ -56,6 +61,9 @@ class Personal extends React.Component {
 =======
         // this.getUserInfo()
 >>>>>>> 06cf57b... first commit
+=======
+        // this.getUserInfo()
+>>>>>>> 9f97350... first commit
     }
     
     getUserInfo() {
@@ -181,6 +189,7 @@ class Personal extends React.Component {
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (account) {
 =======
         // if (account) {
@@ -188,6 +197,9 @@ class Personal extends React.Component {
 =======
         // if (account) {
 >>>>>>> 06cf57b... first commit
+=======
+        // if (account) {
+>>>>>>> 9f97350... first commit
             if (!isAuth) {
                 return (
                     <div>
@@ -210,6 +222,7 @@ class Personal extends React.Component {
             }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         } else {
             return <Skeleton></Skeleton>
         }
@@ -223,6 +236,11 @@ class Personal extends React.Component {
             // return <Skeleton></Skeleton>
         // }
 >>>>>>> 06cf57b... first commit
+=======
+        // } else {
+            // return <Skeleton></Skeleton>
+        // }
+>>>>>>> 9f97350... first commit
     }
 
     render() {
